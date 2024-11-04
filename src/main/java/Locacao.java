@@ -1,14 +1,33 @@
-class Locacao {
-    private Veiculo veiculo;
-    private Cliente cliente;
+import java.util.ArrayList;
+import java.util.List;
 
-    public Locacao(Veiculo veiculo, Cliente cliente){
+class Locacao {
+    private List<Locacao> lLocacao;
+
+    int id;
+    Cliente cliente;
+    Veiculo veiculo;
+    String data;
+    String diasLocados;
+
+    Locacao(int id, Cliente cliente, Veiculo veiculo, String data, String diasLocados){
+        this.id = id;
         this.cliente = cliente;
         this.veiculo = veiculo;
+        this.data = data;
+        this.diasLocados = diasLocados;
+        this.lLocacao = new ArrayList<>();
     }
 
-    public void exibirInformacoes(){
-        System.out.println("Locação");
-        System.out.println("Cliente: " +cliente.getNome() + "\nPlaca do veiculo: " +veiculo.getPlaca() +"\nValor da diaria: " +veiculo.getValorDia());
+
     }
+
+    public Cliente getCliente(){
+        return cliente;
+    }
+
+    public Veiculo getVeiculo(){
+        return veiculo;
+    }
+
 }

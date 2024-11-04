@@ -1,20 +1,20 @@
 class Veiculo {
-    private String placa;
-    String modelo;
+    String placa;
     String descricao;
-    private String valor_diaria;
+    String modelo;
+    String valorDiaria;
 
-    public Veiculo(String modelo, String placa, String descricao, String valor_diaria){
+    //Criação do construtor
+    Veiculo(String placa, String descricao, String modelo, String valorDiaria){
         this.placa = placa;
-        this.modelo = modelo;
         this.descricao = descricao;
-        this.valor_diaria = valor_diaria;
+        this.modelo = modelo;
+        this.valorDiaria = valorDiaria;
     }
 
-    public String getPlaca() {
+    //criação dos metodos
+    public String getPlaca(){
         return placa;
     }
-    public String getValorDia() {
-        return valor_diaria;
-    }
+
 }
