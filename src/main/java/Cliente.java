@@ -1,21 +1,19 @@
-class Cliente{
-    private int idade;
-    private String cnh;
-    public String nome;
-    private String endereco;
-    private String telefone;
+public class Cliente{
 
-    //Criação do construtor;
+    int idade;
+    String cnh;
+    String nome;
+    String endereco;
+    String telefone;
 
-    Cliente(int idade, String cnh, String nome, String endereco, String telefone){
-        this.idade = idade;
-        this.cnh = cnh;
-        this.nome = nome;
-        this.endereco = endereco;
-        this.telefone = telefone;
+    void getInfoCliente(){
+        System.out.println("Nome: " +this.nome);
+        System.out.println("Idade: " +this.idade);
+        System.out.println("CNH: " +this.cnh);
+        System.out.println("Endereço: " +this.endereco);
+        System.out.println("Telefone: " +this.telefone);
     };
 
-    //Criação dos metodos;
     public String getNome(){
         return nome;
     }

@@ -1,8 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
-
-class Locacao {
-    private List<Locacao> lLocacao;
+public class Locacao {
 
     int id;
     Cliente cliente;
@@ -10,24 +6,12 @@ class Locacao {
     String data;
     String diasLocados;
 
-    Locacao(int id, Cliente cliente, Veiculo veiculo, String data, String diasLocados){
-        this.id = id;
-        this.cliente = cliente;
-        this.veiculo = veiculo;
-        this.data = data;
-        this.diasLocados = diasLocados;
-        this.lLocacao = new ArrayList<>();
-    }
-
-
-    }
-
-    public Cliente getCliente(){
-        return cliente;
-    }
-
-    public Veiculo getVeiculo(){
-        return veiculo;
+    void getInfoLocacao(){
+        System.out.println("/////CADASTRO REALIZADO COM SUCESSO/////");
+        System.out.println("Nome: " + cliente.getNome());
+        System.out.println("Placa: " + veiculo.getPlaca());
+        System.out.println("Valor da diaria: " + veiculo.getValorDiaria());
+        System.out.println("Cadastro feito com sucesso!");
     }
 
 }

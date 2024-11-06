@@ -1,20 +1,21 @@
-class Veiculo {
+public class Veiculo {
     String placa;
     String descricao;
     String modelo;
     String valorDiaria;
 
-    //Criação do construtor
-    Veiculo(String placa, String descricao, String modelo, String valorDiaria){
-        this.placa = placa;
-        this.descricao = descricao;
-        this.modelo = modelo;
-        this.valorDiaria = valorDiaria;
-    }
+    void getInfoVeiculo(){
+        System.out.println("Modelo: " +this.modelo);
+        System.out.println("Descricao: " +this.descricao);
+        System.out.println("Placa: " +this.placa);
+        System.out.println("Valor diaria: " +this.valorDiaria);
+    };
 
-    //criação dos metodos
     public String getPlaca(){
         return placa;
     }
 
+    public String getValorDiaria(){
+        return valorDiaria;
+    }
 }
